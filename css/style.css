@@ -7,7 +7,11 @@
 
 body {
     height: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(92, 92, 92);
+}
+
+::placeholder {
+    color: #fff;
 }
 
 h1 {
@@ -33,29 +37,35 @@ h1 {
 
 .input {
     font-size: 20px;
+    color: #fff;
 }
 
 .input_div .input {
     padding: 0.5rem 1rem;
     height: 50px;
     outline: 0;
-    background-color: #fff;
+    background-color: rgb(95, 95, 95);
     width: 450px;
     margin: 0.25rem;
-    border-radius: 25px;
+    margin-left: 1.3em;
+    border-radius: 15px;
     border: none;
+    box-shadow: -4px -7px 12px rgba(110, 110, 110, 0.808),
+                -2px 10px 13px rgba(75, 75, 75, 0.808);
 }
 
 .addButton {
     height: 50px;
     width: 50px;
-    border-radius: 25px;
+    border-radius: 10px;
     outline: none;
     border: none;
-    background-color: lime;
-    color: #fff;
-    margin: 2px;
+    background-color: rgb(94, 94, 94);
+    color: rgb(255, 255, 255);
+    margin: 20px;
     cursor: pointer;
+    box-shadow: -3px -4px 12px rgba(110, 110, 110, 0.808),
+                -2px 10px 13px rgba(75, 75, 75, 0.808);
 }
 
 .addButton:hover {
@@ -68,7 +78,7 @@ h1 {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -78,7 +88,10 @@ h1 {
 .item {
     padding: 0.5rem;
     margin-bottom: 1.5rem;
-    border-bottom: 4px solid #fff;
+    border-radius: 10px;
+    box-shadow: -2px -5px 12px rgba(110, 110, 110, 0.808),
+                4px 6px 13px rgba(75, 75, 75, 0.808);
+    
 }
 
 .item_input {
@@ -106,7 +119,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     background: none;
     outline: none;
-    color: rgb(255, 0, 0);
+    color: rgb(99, 0, 0);
     border: none;
     cursor: pointer;
 }
